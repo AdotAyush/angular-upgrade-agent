@@ -1,0 +1,17 @@
+// FILE: apps/cli/package.json
+{
+    "name": "@angular-upgrade-agent/cli",
+    "version": "0.0.1",
+    "bin": {
+        "upgrade-agent": "./dist/index.js"
+    },
+    "scripts": {
+        "build": "tsc"
+    },
+    "dependencies": {
+        "commander": "^11.0.0",
+        "chalk": "^5.0.0",
+        "ora": "^7.0.0",
+        "inquirer": "^9.0.0"
+    }
+}

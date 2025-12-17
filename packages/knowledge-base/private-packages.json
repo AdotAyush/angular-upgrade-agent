@@ -1,0 +1,34 @@
+{
+    "privatePackages": {
+        "@mycompany/core": {
+            "registry": "https://npm.mycompany.com",
+            "scope": "@mycompany",
+            "authToken": "${NPM_MYCOMPANY_TOKEN}",
+            "versionStrategy": "latest"
+        },
+        "@mycompany/ui-components": {
+            "registry": "https://npm.mycompany.com",
+            "scope": "@mycompany",
+            "authToken": "${NPM_MYCOMPANY_TOKEN}",
+            "versionStrategy": "pinned"
+        }
+    },
+    "registries": {
+        "@mycompany": {
+            "url": "https://npm.mycompany.com",
+            "authRequired": true,
+            "envVar": "NPM_MYCOMPANY_TOKEN"
+        },
+        "@internal": {
+            "url": "https://registry.internal.corp",
+            "authRequired": true,
+            "envVar": "NPM_INTERNAL_TOKEN"
+        }
+    },
+    "resolutionStrategy": {
+        "preferLatest": false,
+        "allowPrereleases": false,
+        "strictPeerDependencies": true,
+        "deduplication": true
+    }
+}

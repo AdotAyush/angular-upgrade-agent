@@ -1,0 +1,7 @@
+// FILE: packages/knowledge-base/typescript/recommended-config.json
+{
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true
+}

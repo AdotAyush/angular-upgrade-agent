@@ -1,0 +1,39 @@
+// FILE: packages/knowledge-base/libraries/replacements.json
+{
+    "replacements": [
+        {
+            "package": "@angular/flex-layout",
+            "status": "deprecated",
+            "replacement": "N/A",
+            "note": "Use standard CSS Flexbox, Grid, or Tailwind CSS. No direct drop-in replacement."
+        },
+        {
+            "package": "protractor",
+            "status": "deprecated",
+            "replacement": "cypress",
+            "alternatives": [
+                "playwright",
+                "puppeteer"
+            ],
+            "note": "Protractor is end-of-life from Angular 15. Migration required."
+        },
+        {
+            "package": "tslint",
+            "status": "dead",
+            "replacement": "eslint",
+            "note": "TSLint is deprecated. Migrate to ESLint using angular-eslint."
+        },
+        {
+            "package": "@angular/http",
+            "status": "dead",
+            "replacement": "@angular/common/http",
+            "note": "Removed in Angular 8. Must upgrade to HttpClient."
+        },
+        {
+            "package": "ng2-charts",
+            "status": "active",
+            "replacement": "ng2-charts",
+            "note": "Breaking changes in v3/v4 depending on Chart.js version. Check compatibility."
+        }
+    ]
+}

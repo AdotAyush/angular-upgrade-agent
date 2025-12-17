@@ -1,0 +1,50 @@
+// FILE: packages/knowledge-base/rxjs/migrations.json
+{
+    "migrations": [
+        {
+            "from": "5",
+            "to": "6",
+            "changes": [
+                {
+                    "type": "import_path",
+                    "name": "rxjs/Observable",
+                    "replacement": "rxjs"
+                },
+                {
+                    "type": "operator_chaining",
+                    "description": "Move operators from dot-chaining to pipe() function"
+                }
+            ]
+        },
+        {
+            "from": "6",
+            "to": "7",
+            "changes": [
+                {
+                    "type": "operator",
+                    "name": "toPromise",
+                    "replacement": "lastValueFrom",
+                    "note": "toPromise is deprecated in 7 and removed in 8. Use lastValueFrom or firstValueFrom."
+                },
+                {
+                    "type": "operator",
+                    "name": "flatMap",
+                    "replacement": "mergeMap",
+                    "note": "flatMap is strictly renamed to mergeMap to avoid array method confusion."
+                },
+                {
+                    "type": "operator",
+                    "name": "pluck",
+                    "replacement": "map",
+                    "note": "pluck is deprecated. Use map(x => x?.prop)."
+                },
+                {
+                    "type": "operator",
+                    "name": "combineLatest",
+                    "replacement": "combineLatestWith",
+                    "note": "If using as an operator, switch to combineLatestWith to allow tree-shaking."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+// FILE: packages/knowledge-base/node/compatibility.json
+{
+    "versions": [
+        {
+            "version": "14",
+            "status": "End-of-life",
+            "eolDate": "2023-04-30",
+            "compatibleAngular": "10-15"
+        },
+        {
+            "version": "16",
+            "status": "End-of-life",
+            "eolDate": "2023-09-11",
+            "compatibleAngular": "12-16"
+        },
+        {
+            "version": "18",
+            "status": "Maintenance",
+            "eolDate": "2025-04-30",
+            "compatibleAngular": "15-18",
+            "recommended": true
+        },
+        {
+            "version": "20",
+            "status": "Active LTS",
+            "eolDate": "2026-04-30",
+            "compatibleAngular": "17-18",
+            "recommended": true
+        },
+        {
+            "version": "22",
+            "status": "Current",
+            "eolDate": "2027-04-30",
+            "compatibleAngular": "18+"
+        }
+    ]
+}

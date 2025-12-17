@@ -1,0 +1,81 @@
+// FILE: packages/knowledge-base/angular/versions.json
+{
+    "versions": [
+        {
+            "version": "13.0.0",
+            "releaseDate": "2021-11-03",
+            "ltsEndDate": "2023-05-03",
+            "nodeRange": "^12.20.0 || ^14.15.0 || ^16.10.0",
+            "typescriptRange": ">=4.4.2 <4.5.0",
+            "rxjsRange": "^6.5.3 || ^7.4.0",
+            "breakingChanges": [
+                "ViewEngine removed",
+                "IE11 support removed",
+                "Node 12 older versions dropped"
+            ]
+        },
+        {
+            "version": "14.0.0",
+            "releaseDate": "2022-06-02",
+            "ltsEndDate": "2023-11-02",
+            "nodeRange": "^14.15.0 || ^16.10.0",
+            "typescriptRange": ">=4.6.0 <4.8.0",
+            "rxjsRange": "^6.5.3 || ^7.5.0",
+            "breakingChanges": [
+                "Typed Forms introduced (strict)",
+                "Standalone Components (developer preview)"
+            ]
+        },
+        {
+            "version": "15.0.0",
+            "releaseDate": "2022-11-16",
+            "ltsEndDate": "2024-05-16",
+            "nodeRange": "^14.20.0 || ^16.13.0 || ^18.10.0",
+            "typescriptRange": ">=4.8.2 <5.0.0",
+            "rxjsRange": "^6.5.3 || ^7.5.0",
+            "breakingChanges": [
+                "Angular Compiler option 'enableIvy' removed",
+                "Router canMatch guard",
+                "HttpClientModule is standalone-ready"
+            ]
+        },
+        {
+            "version": "16.0.0",
+            "releaseDate": "2023-05-03",
+            "ltsEndDate": "2024-11-03",
+            "nodeRange": "^16.14.0 || ^18.10.0",
+            "typescriptRange": ">=4.9.3 <5.1.0",
+            "rxjsRange": "^7.8.0",
+            "breakingChanges": [
+                "Signals (developer preview)",
+                "ng-cc removed",
+                "Router requiredComponentInputBinding"
+            ]
+        },
+        {
+            "version": "17.0.0",
+            "releaseDate": "2023-11-08",
+            "ltsEndDate": "2025-05-08",
+            "nodeRange": "^18.13.0 || ^20.9.0",
+            "typescriptRange": ">=5.2.0 <5.3.0",
+            "rxjsRange": "^7.8.0",
+            "breakingChanges": [
+                "New Control Flow (@if, @for)",
+                "Deferrable Views",
+                "Hydration enabled by default in new apps"
+            ]
+        },
+        {
+            "version": "18.0.0",
+            "releaseDate": "2024-05-22",
+            "ltsEndDate": "2025-11-22",
+            "nodeRange": "^18.19.1 || ^20.11.1 || ^22.0.0",
+            "typescriptRange": ">=5.4.0 <5.5.0",
+            "rxjsRange": "^7.8.0",
+            "breakingChanges": [
+                "HttpClientModule deprecated for provideHttpClient",
+                "Route.data inheritance changes"
+            ]
+        }
+    ]
+}
